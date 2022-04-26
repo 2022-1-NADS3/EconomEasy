@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Teste_5.MainPage"
+             BackgroundColor="White">
+
+
+    <StackLayout Padding="40" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" >
+
+        <Image Source="EconomEasy.jpg"  HeightRequest="100" WidthRequest="100" VerticalOptions="Start" />
+        <Label Text="Olá! Faça login para começar" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium"  TextColor="Black"  HorizontalOptions="Center" />
+        <Entry x:Name="txtLogin" Placeholder="Login" PlaceholderColor="Gray" BackgroundColor="LightGray" VerticalOptions="Center"  HeightRequest="50" WidthRequest="50"/>
+        <Entry x:Name="txtSenha" Placeholder="Senha" IsPassword="True" PlaceholderColor="Gray" VerticalOptions="Center"  BackgroundColor="LightGray"  HeightRequest="50" WidthRequest="50"/>
+        <Button VerticalOptions="Center" Text="Começar" TextColor="White" BackgroundColor="Purple" BorderWidth="1.5" HorizontalOptions="Center" HeightRequest="50" WidthRequest="150" Clicked="Button_Clicked"/>
+        <Label HorizontalOptions="Center" VerticalOptions="End">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Não tem cadastro?" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" />
+                    <Span Text="Cadastre-se" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" TextDecorations="Underline"/>
+                </FormattedString>
+            </Label.FormattedText>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Reconhecer_Tap"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="Esqueci minha senha" TextColor="Purple" VerticalOptions="End" HorizontalOptions="Center"  />
+
+
+
+    </StackLayout>
+
+</ContentPage>
