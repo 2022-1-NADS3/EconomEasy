@@ -39,13 +39,12 @@ Mesmo que o usuário não possua grande conhecimento financeiro, ele consegue se
 |-->src<br>
   &emsp;|-->Backend<br>
   &emsp;|-->Frontend<br>
-  &emsp;&emsp;|--> appEconomEasy.Android
-  &emsp;&emsp;&emsp;|--> Assets
-  &emsp;&emsp;&emsp;|--> Properties
-  &emsp;&emsp;&emsp;|--> Resources
-  &emsp;&emsp;|--> appEconomEasy.iOS
-  &emsp;&emsp;|--> appEconomEasy
-  
+  &emsp;&emsp;|--> appEconomEasy.Android<br>
+  &emsp;&emsp;&emsp;|--> Assets<br>
+  &emsp;&emsp;&emsp;|--> Properties<br>
+  &emsp;&emsp;&emsp;|--> Resources<br>
+  &emsp;&emsp;|--> appEconomEasy.iOS<br>
+  &emsp;&emsp;|--> appEconomEasy<br>
   
 |readme.md<br>
 
