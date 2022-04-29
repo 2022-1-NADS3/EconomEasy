@@ -8,7 +8,7 @@
 
 ## Grupo 2
 
-## Integrantes: <a href="https://www.linkedin.com/in/bruno-ribas-801934b8/">Bruno Ribas</a>,<a href="https://www.linkedin.com/in/erika-r-b-761186109/">Erika Barros</a>, <a href="https://www.linkedin.com/in/willians-domingues-de-souza-81b367197/">Willians Souza</a>, 
+## Integrantes: <a href="https://www.linkedin.com/in/bruno-ribas-801934b8/">Bruno Ribas</a>,<a href="https://www.linkedin.com/in/erika-r-b-761186109/">Erika Barros</a>, <a href="https://www.linkedin.com/in/willians-domingues-de-souza-81b367197/">Willians Souza</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Professor Me. Victor Bruno Alexander Rosetti Quiroz</a>
 
