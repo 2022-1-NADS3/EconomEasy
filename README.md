@@ -96,5 +96,5 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://www.figm.com/file/kfKX3YHqoK3kOZIAwQCbC6/protótipo?nod-id:0%3A1>
+1. <https://www.figma.com/file/kfKX3YHqoK3kOZIAwQCbC6/protótipo?nod-id:0%3A1>
 
