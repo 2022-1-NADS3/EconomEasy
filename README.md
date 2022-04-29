@@ -15,7 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="https://1drv.ms/u/s!At-nsgi8ZxAyr1r71WLxU2Hj2EH8" alt="EconomEasy-Logotipo" border="0">
+<img src="imagens/EconomEasy.jpg" alt="EconomEasy-Logotipo" border="0">
 </p>
 
 
