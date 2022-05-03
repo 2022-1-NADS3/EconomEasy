@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Teste_5
+namespace appEconomEasy
 {
     public partial class MainPage : ContentPage
     {
@@ -20,6 +20,7 @@ namespace Teste_5
             if (txtLogin.Text == "admin" && txtSenha.Text == "admin")
             {
                 DisplayAlert("Login efetuado", "Usuário identificado", "Ok");
+                Navigation.PushAsync(new TelaLogada());
             }
             else
             {

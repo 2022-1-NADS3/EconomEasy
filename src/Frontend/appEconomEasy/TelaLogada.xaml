@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appEconomEasy.TelaLogada">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Grid x:Name="Padrao" Background="#E5E5E5" Width="360">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Uid="Cabecalho"  Height="60" />
+                        <RowDefinition Height="1" />
+                        <RowDefinition Height="1" />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <BoxView Grid.Row="0"
+                             BackgroundColor="#F5F2F2"/>
+                    <BoxView Grid.Row="1"
+                             BackgroundColor="#605E5E"/>
+                    <BoxView Grid.Row="1"
+                             BackgroundColor="#9D9696"/>
+                    <BoxView Grid.Row="2"
+                             BackgroundColor="#F5F2F2"/>
+                </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
