@@ -17,15 +17,15 @@ namespace appEconomEasy
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            if (txtLogin.Text == "admin" && txtSenha.Text == "admin")
+            /*if (txtLogin.Text == "admin" && txtSenha.Text == "admin")
             {
-                DisplayAlert("Login efetuado", "Usuário identificado", "Ok");
+                DisplayAlert("Login efetuado", "Usuário identificado", "Ok");*/
                 Navigation.PushAsync(new TelaLogada());
-            }
+            /*}
             else
             {
                 DisplayAlert("Ocorreu um erro!", "Usuário não identificado", "Ok");
-            }
+            }*/
         }
 
         private void Reconhecer_Tap(object sender, EventArgs e)

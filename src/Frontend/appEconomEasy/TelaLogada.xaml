@@ -1,32 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
              x:Class="appEconomEasy.TelaLogada">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-                <Grid x:Name="Padrao" Background="#E5E5E5" Width="360">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition x:Uid="Cabecalho"  Height="60" />
-                        <RowDefinition Height="1" />
-                        <RowDefinition Height="1" />
-                        <RowDefinition Height="1" />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <BoxView Grid.Row="0"
-                             BackgroundColor="#F5F2F2"/>
-                    <BoxView Grid.Row="1"
-                             BackgroundColor="#605E5E"/>
-                    <BoxView Grid.Row="1"
-                             BackgroundColor="#9D9696"/>
-                    <BoxView Grid.Row="2"
-                             BackgroundColor="#F5F2F2"/>
+            <Grid Margin="0,0,0,0" x:Name="Padrao" Background="#E5E5E5" HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Uid="Cabecalho"  Height="60" />
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0"
+                         BackgroundColor="#9D9696"
+                         />
+                <Image Source="Easy.jpg" Margin="5,5,5,5" HeightRequest="100" WidthRequest="100" VerticalOptions="Start" />
+                
+                <Page.Resources>
+                    <DataTemplate x:Key="DefaultTemplate" x:DataType="local:MenuItem">
+                        <Grid Width="240" Height="48">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="48" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <SymbolIcon Grid.Column="0" Symbol="{x:Bind Icon, Mode=OneWay}" Foreground="White" />
+                            <TextBlock Grid.Column="1" Text="{x:Bind Name, Mode=OneWay}" FontSize="16" VerticalAlignment="Center" Foreground="White" />
+                        </Grid>
+                    </DataTemplate>
+                </Page.Resources>
+
+                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <controls:HamburgerMenu x:Name="hamburgerMenuControl" PaneBackground="Black" Foreground="White" 
+                                ItemTemplate="{StaticResource DefaultTemplate}" ItemClick="OnMenuItemClick"
+                                OptionsItemTemplate="{StaticResource DefaultTemplate}" OptionsItemClick="OnMenuItemClick">
+                        <Frame x:Name="contentFrame" Foreground="Black"/>
+                    </controls:HamburgerMenu>
                 </Grid>
+                </Page>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appEconomEasy.Android", "ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appEconomEasy.iOS", "appEconomEasy.iOS\appEconomEasy.iOS.csproj", "{47BD8904-C7AE-4A97-B9B0-4B92812D160B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appEconomEasy", "appEconomEasy\appEconomEasy.csproj", "{4B124212-9106-4760-9208-C96CFF179ADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "appEconomEasy", "appEconomEasy\appEconomEasy.csproj", "{4B124212-9106-4760-9208-C96CFF179ADF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
