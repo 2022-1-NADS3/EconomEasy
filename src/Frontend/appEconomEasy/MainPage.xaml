@@ -24,6 +24,16 @@
             </Label.GestureRecognizers>
         </Label>
         <Label Text="Esqueci minha senha" TextColor="Purple" VerticalOptions="End" HorizontalOptions="Center"  />
+        <Label Text ="JSON was here!" x:Name="json"/>
+        <Label Text = "Chama o Json!" Clicked="Dados"/>
+        <Label Text = "Nome do Usúario!"/>
+        <Label Text = "NNNNNN" x:Name="userName"/>
+        <Label Text = "Sobrenome do Usúario!"/>
+        <Label Text = "$$$$$$$" x:Surename="sureName"/>
+        <Label Text = "Idade do Usúario!"/>
+        <Label Text = "IIIIIII" x:Idade="userAge"/>
+        <Label Text = "Altura do Usúario!"/>
+        <Label Text = "AAAAAAA" x:Altura="userHeight"/>
 
 
 

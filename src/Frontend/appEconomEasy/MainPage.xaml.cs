@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -31,6 +32,38 @@ namespace appEconomEasy
         private void Reconhecer_Tap(object sender, EventArgs e)
         {
 
+        }
+        public class Objeto
+        {
+            [JsonProperty("nome")]
+            public string nome { get; set; }
+            [JsonProperty("sobrenome")]
+            public string sobrenome { get; set; }
+            [JsonProperty("idade")]
+            public int idade { get; set; }
+            [JsonProperty("altura")]
+            public float altura { get; set; }
+        }
+
+        public partial class MainPage : ContentPage
+        {
+            async void Dados(object sender, EventArgs e)
+            {
+                var httpClient = new HttpClient();
+                var resultados = await httpClient.GetStringAsync("http://132.1.3.1:3000/user");
+                var resultadoFinal = JsonConvert.DeserializeObject<Objeto>(resultados);
+
+                json.Text = resultados;
+                userName.Text = resultadoFinal.nome;
+                sureName.Text = resultadoFinal.sobrenome;
+                userAge.Text = resultadoFinal.idade.ToString();
+                userHeight.Text = resultadoFinal.altura.ToString();
+
+            }
+            public MainPage()
+            {
+                InitializeComponet();
+            }
         }
     }
 }

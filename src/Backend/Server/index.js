@@ -2,6 +2,7 @@ var express = require ("express");
 var app = express();
 var port = process.env.PORT || 3000; 
 var hostname = "localhost";
+var port = process.env.PORT || 3000;
 //var nome = "Erika"; Ou após a barra do navegador incluir ?nome=onome
 const json = '[{"nome":"Erika", "sobrenome":"Barros", "altura":1.55}, {"nome":"Willians", "sobrenome":"Frozen", "altura":1.90}]';
 var objeto = JSON.parse(json);
@@ -26,7 +27,25 @@ app.get("/paginainicial", function (req, res){
     console.log("Passei aqui2!");
 });
 
+app.use(bodyParser.json('application/json'));
+
 app.get("/user", function (req, res){
-    res.send("Aqui seu usuário!");
-    console.log("Passei aqui3!");
+    res.log("Enviei o Get");
+    console.send(JSON.stringify(
+        {
+            nome:"Teo",
+            sobrenome: "Baldo",
+            idade: 22,
+            altura: 1.75
+        }
+    ));
+
+app.post("/add", function(req,res){
+    console.log("Recebi um dado");
+    console.log(req.body.nome);
+    console.log(req.body.sobrenome);
+    console.log(req.body.idade);
+    console.log(req.body.altura);
+    res.send("JSON Recebido!")
+});
 });
