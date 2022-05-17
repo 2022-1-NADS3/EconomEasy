@@ -29,14 +29,15 @@
                         </Grid>
                     </DataTemplate>
                 </Page.Resources>
-                -->
+                
                 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                     <controls:HamburgerMenu x:Name="hamburgerMenuControl" PaneBackground="Black" Foreground="White" 
                                 ItemTemplate="{StaticResource DefaultTemplate}" ItemClick="OnMenuItemClick"
                                 OptionsItemTemplate="{StaticResource DefaultTemplate}" OptionsItemClick="OnMenuItemClick">
                         <Frame x:Name="contentFrame" Foreground="Black"/>
                     </controls:HamburgerMenu>
-                </Grid>
+                </Grid>--> 
+                
             </Grid>
         </StackLayout>
     </ContentPage.Content>
