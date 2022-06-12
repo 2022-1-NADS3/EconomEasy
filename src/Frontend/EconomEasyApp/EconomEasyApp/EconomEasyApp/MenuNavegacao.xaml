@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EconomEasyApp.MenuNavegacao"
+             xmlns:pages="clr-namespace:EconomEasyApp">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menu" BackgroundColor="#9D9696" Opacity="0.45">
+            <StackLayout Orientation="Vertical" VerticalOptions="Start" Margin="0,20,20,0">
+                <ScrollView VerticalOptions="Start">
+                    <StackLayout Orientation="Vertical" BackgroundColor="white">
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout VerticalOptions="Center"
+                                         BackgroundColor="white">
+                                <Label x:Name="Menu" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout BackgroundColor="silver" MinimumHeightRequest="1" Orientation="Vertical" HeightRequest="1" HorizontalOptions="FillAndExpand">
+                                <Label Text="ffff" FontSize="1" TextColor="black" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+
+                            <ListView x:Name="NavigationList" Margin="0" SeparatorVisibility="Default"
+                                      VerticalOptions="Start" ItemTapped="Item_Tapped">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                                                <Label Text="{Binding NomesMenu}" TextColor="black" HorizontalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+</FlyoutPage>
