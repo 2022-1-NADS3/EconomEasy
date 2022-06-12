@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "appEconomEasy": {
-      "commandName": "Project",
-      "remoteDebugEnabled": false,
-      "nativeDebugging": true
-    }
-  }
-}
