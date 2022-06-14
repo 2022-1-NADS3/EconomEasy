@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="EconomEasyApp.Config">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" BackgroundColor="#9D9696" Padding="15">
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton HeightRequest="40" WidthRequest="40" BackgroundColor="#9D9696" CornerRadius="5" HorizontalOptions="StartAndExpand" Source="Easy.jpg" Clicked="VoltaPrimTela"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="1" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Cadastro de lembretes"/>
+                    </StackLayout>
+                    <Entry x:Name="_entry"
+               Placeholder="Entre com um texto para o lembrete" />
+                    <Label Text="Selecione a hora:" />
+                    <TimePicker x:Name="_timePicker"
+                    Time="11:00:00"
+                    Format="T"
+                    PropertyChanged="OnTimePickerPropertyChanged" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Enable timer:" />
+                        <Switch x:Name="_switch"
+                    HorizontalOptions="EndAndExpand"
+                    Toggled="OnSwitchToggled" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="2" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Tela incial"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <RadioButton Content="Exibir saldo consolidado"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <RadioButton Content="Exibir saldo conta/banco"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <RadioButton Content="Exibir saldo por ano"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="3" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Minha conta"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button Text="Limpar minhas informações" BackgroundColor="White" TextColor="red"  HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="40" WidthRequest="50" Clicked="Button_Clear"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="8" Padding="3">
+                        <Button Text="Excluir minha conta" BackgroundColor="White" TextColor="red"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" Clicked="Button_Delete"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

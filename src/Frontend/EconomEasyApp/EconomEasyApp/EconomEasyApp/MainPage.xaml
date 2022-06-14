@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EconomEasyApp.MainPage"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:behavior11="clr-namespace:EconomEasyApp.Classes"
+             BackgroundColor="White">
+
+    <StackLayout Padding="40" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" >
+
+        <Image Source="EconomEasy.jpg"  HeightRequest="100" WidthRequest="100" VerticalOptions="Start" />
+        <Label Text="Olá! Faça login para começar" VerticalOptions="Center" FontSize="Small"  TextColor="Black"  HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout>
+            <Label x:Name="txtName" Text="Usuário"/>
+            <Entry x:Name="entryUsername" Placeholder="Digite seu usuário" BackgroundColor="LightGray"/>
+            <Label x:Name="txtSenha" Text="Senha"/>
+            <Entry x:Name="entryPassword" Placeholder="Digite sua senha" BackgroundColor="LightGray"/>
+            <Button x:Name="btnLogIn" Text="Entrar" Clicked="Button_LogIn" BackgroundColor="purple" TextColor="white"/>
+        </StackLayout>
+        
+        <Label HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Cadastre-se" FontAttributes="Bold" FontSize="Small"  TextColor="Black" TextDecorations="Underline"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <!--
+        <Label Text="Esqueci minha senha" TextColor="Purple" VerticalOptions="End" HorizontalOptions="Center"  />
+        <Label Text ="JSON was here!" x:Name="json"/>
+        <Label Text = "Chama o Json!" Clicked="Dados"/>
+        <Label Text = "Nome do Usúario!"/>
+        <Label Text = "NNNNNN" x:Name="userName"/>
+        <Label Text = "Sobrenome do Usúario!"/>
+        <Label Text = "$$$$$$$" x:Surename="sureName"/>
+        <Label Text = "Idade do Usúario!"/>
+        <Label Text = "IIIIIII" x:Idade="userAge"/>
+        <Label Text = "Altura do Usúario!"/>
+        <Label Text = "AAAAAAA" x:Altura="userHeight"/>
+         -->
+    </StackLayout>
+
+</ContentPage>

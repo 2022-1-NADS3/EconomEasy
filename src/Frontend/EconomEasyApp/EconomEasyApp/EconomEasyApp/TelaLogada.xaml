@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="EconomEasyApp.TelaLogada">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" BackgroundColor="#9D9696" Padding="15">
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton HeightRequest="40" WidthRequest="40" BackgroundColor="#9D9696" CornerRadius="5" HorizontalOptions="StartAndExpand" Source="Easy.jpg" Clicked="VoltaPrimTela"/>
+                        <ImageButton HeightRequest="40" WidthRequest="40" BackgroundColor="#9D9696" CornerRadius="5" HorizontalOptions="End" Source="menuicon.jpg" Clicked="Hamburguer"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Padding="15">
+                    <StackLayout>
+                        <ImageButton HeightRequest="40" WidthRequest="40" BackgroundColor="white" CornerRadius="5" HorizontalOptions="End" Source="plusicon.png" Clicked="AddAddInfFin"/>
+                        <Label Text="Sua análise financeira" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Saldo da Conta: R$ 1.500,00" TextColor="#245E8F" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+                <forms:ChartView x:Name="Chart1" HeightRequest="150"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

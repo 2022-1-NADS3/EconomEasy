@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="EconomEasyApp.AddFin">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" BackgroundColor="#9D9696" Padding="15">
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton HeightRequest="40" WidthRequest="40" BackgroundColor="#9D9696" CornerRadius="5" HorizontalOptions="StartAndExpand" Source="Easy.jpg" Clicked="VoltaPrimTela"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Padding="15">
+                    <StackLayout>
+                        <Label Text="Painel de Inserção" FontAttributes="Bold" FontSize="Medium" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="2" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout>
+                        <Label Text="Entrada (+) ou Saída (-)"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Entry BackgroundColor="white" VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="40" WidthRequest="50"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="3" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Conta, Banco ou Cartão"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Entry BackgroundColor="white" VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="40" WidthRequest="50"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="4" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Categorias"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Picker x:Name="CategDesp" HorizontalOptions="FillAndExpand" Title="Selecione a Categoria:" BackgroundColor="White" FontSize="Small">
+                            <Picker.Items>
+                                <x:String>Casa</x:String>
+                                <x:String>Entretenimento</x:String>
+                                <x:String>Comida</x:String>
+                                <x:String>Veículos</x:String>
+                                <x:String>Educação</x:String>
+                                <x:String>Saúde</x:String>
+                                <x:String>Salário</x:String>
+                                <x:String>Desp. Diversas</x:String>
+                                <x:String>Outras Receitas</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="5" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Forma de pagamento"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Picker x:Name="FormPag" HorizontalOptions="FillAndExpand" Title="Selecione a Categoria:" BackgroundColor="White" FontSize="Small">
+                            <Picker.Items>
+                                <x:String>Débito</x:String>
+                                <x:String>Crédito</x:String>
+                                <x:String>Parcelado</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="6" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Quantidade de parcelas"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Entry BackgroundColor="white" VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="40" WidthRequest="50"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="7" BackgroundColor="#E5E5E5" Padding="15" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Primeiro vencimento"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Entry BackgroundColor="white" VerticalOptions="End" HorizontalOptions="FillAndExpand" HeightRequest="40" WidthRequest="50"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="8" Padding="3">
+                        <Button Text="Confimar" BackgroundColor="purple" TextColor="white"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" Clicked="Button_AddFin"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
