@@ -26,6 +26,9 @@
                     <Span Text="Cadastre-se" FontAttributes="Bold" FontSize="Small"  TextColor="Black" TextDecorations="Underline"/>
                 </FormattedString>
             </Label.FormattedText>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Reconhecer_Tap"/>
+            </Label.GestureRecognizers>
         </Label>
         <!--
         <Label Text="Esqueci minha senha" TextColor="Purple" VerticalOptions="End" HorizontalOptions="Center"  />

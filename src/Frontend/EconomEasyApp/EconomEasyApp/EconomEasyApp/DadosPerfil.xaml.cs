@@ -18,7 +18,7 @@ namespace EconomEasyApp
         }
         private void VoltaPrimTela(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new TelaLogada());
         }
 
         private void Button_Confirmar(object sender, EventArgs e)

@@ -29,5 +29,10 @@ namespace EconomEasyApp
                 DisplayAlert("Log In", "Usuário ou senha incorretos!", "Tentar Novamente");
             }
         }
+
+        private static void Reconhecer_Tap(object sender, EventArgs e)
+        {
+
+        }
     }
 }
