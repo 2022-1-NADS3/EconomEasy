@@ -11,6 +11,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
@@ -29,7 +31,20 @@
                 </StackLayout>
                 <StackLayout Grid.Row="2" Padding="15">
                     <StackLayout>
+                        <Label Text="Comparativo por categorias" />
                         <forms:ChartView x:Name="Chart1" HeightRequest="150"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="3" Padding="15">
+                    <StackLayout>
+                        <Label Text="Despesas por mês" />
+                        <forms:ChartView x:Name="Chart2" HeightRequest="150"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="4" Padding="15">
+                    <StackLayout>
+                        <Label Text="Receitas x Despesas por mês" />
+                        <forms:ChartView x:Name="Chart3" HeightRequest="150"/>
                     </StackLayout>
                 </StackLayout>
             </Grid>

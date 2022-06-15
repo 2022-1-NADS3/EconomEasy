@@ -54,12 +54,100 @@ namespace EconomEasyApp
                 ValueLabelColor = SKColor.Parse("#808080"),
             }
         };
+        List<Entry> entries2 = new List<Entry>
+        {
+            new Entry(800)
+            {
+                Label = "Jan/22",
+                ValueLabel = "800",
+                Color = SKColor.Parse("#FFD700"),
+                TextColor = SKColor.Parse("#FFD700"),
+                ValueLabelColor = SKColor.Parse("#FFD700"),
+            },
+            new Entry(900)
+            {
+                Label = "Fev/22",
+                ValueLabel = "900",
+                Color = SKColor.Parse("#0000FF"),
+                TextColor = SKColor.Parse("#0000FF"),
+                ValueLabelColor = SKColor.Parse("#0000FF"),
+            },
+            new Entry(870)
+            {
+                Label = "Mar/22",
+                ValueLabel = "870",
+                Color = SKColor.Parse("#FF0000"),
+                TextColor = SKColor.Parse("#FF0000"),
+                ValueLabelColor = SKColor.Parse("#FF0000"),
+            },
+            new Entry(1200)
+            {
+                Label = "Abr/22",
+                ValueLabel = "1200",
+                Color = SKColor.Parse("#008000"),
+                TextColor = SKColor.Parse("#008000"),
+                ValueLabelColor = SKColor.Parse("#008000"),
+            },
+            new Entry(1000)
+            {
+                Label = "Mai/22",
+                ValueLabel = "1000",
+                Color = SKColor.Parse("#808080"),
+                TextColor = SKColor.Parse("#808080"),
+                ValueLabelColor = SKColor.Parse("#808080"),
+            }
+        };
+        List<Entry> entries3 = new List<Entry>
+        {
+            new Entry(460)
+            {
+                Label = "Jan/22",
+                ValueLabel = "460",
+                Color = SKColor.Parse("#FFD700"),
+                TextColor = SKColor.Parse("#FFD700"),
+                ValueLabelColor = SKColor.Parse("#FFD700"),
+            },
+            new Entry(570)
+            {
+                Label = "Fev/22",
+                ValueLabel = "570",
+                Color = SKColor.Parse("#0000FF"),
+                TextColor = SKColor.Parse("#0000FF"),
+                ValueLabelColor = SKColor.Parse("#0000FF"),
+            },
+            new Entry(400)
+            {
+                Label = "Mar/22",
+                ValueLabel = "400",
+                Color = SKColor.Parse("#FF0000"),
+                TextColor = SKColor.Parse("#FF0000"),
+                ValueLabelColor = SKColor.Parse("#FF0000"),
+            },
+            new Entry(360)
+            {
+                Label = "Abr/22",
+                ValueLabel = "360",
+                Color = SKColor.Parse("#008000"),
+                TextColor = SKColor.Parse("#008000"),
+                ValueLabelColor = SKColor.Parse("#008000"),
+            },
+            new Entry(710)
+            {
+                Label = "Mai/22",
+                ValueLabel = "710",
+                Color = SKColor.Parse("#808080"),
+                TextColor = SKColor.Parse("#808080"),
+                ValueLabelColor = SKColor.Parse("#808080"),
+            }
+        };
         public TelaLogada()
         {
             InitializeComponent();
             NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
             Chart1.Chart = new RadialGaugeChart { Entries = entries};
+            Chart2.Chart = new BarChart {Entries = entries2 };
+            Chart3.Chart = new LineChart { Entries = entries3 };
         }
 
         private void AddAddInfFin(object sender, EventArgs e)
