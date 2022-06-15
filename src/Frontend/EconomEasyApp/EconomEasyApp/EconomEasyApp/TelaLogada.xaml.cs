@@ -13,20 +13,45 @@ namespace EconomEasyApp
     {
         List<Entry> entries = new List<Entry>
         {
-            new Entry(200)
+            new Entry(800)
             {
                 Label = "Casa",
-                ValueLabel = "200",
+                ValueLabel = "800",
+                Color = SKColor.Parse("#FFD700"),
+                TextColor = SKColor.Parse("#FFD700"),
+                ValueLabelColor = SKColor.Parse("#FFD700"),
             },
-            new Entry(500)
+            new Entry(700)
             {
-                Label = "Automóvel",
-                ValueLabel = "500",
+                Label = "Veículo",
+                ValueLabel = "700",
+                Color = SKColor.Parse("#0000FF"),
+                TextColor = SKColor.Parse("#0000FF"),
+                ValueLabelColor = SKColor.Parse("#0000FF"),
+            },
+            new Entry(200)
+            {
+                Label = "Entretenimento",
+                ValueLabel = "200",
+                Color = SKColor.Parse("#FF0000"),
+                TextColor = SKColor.Parse("#FF0000"),
+                ValueLabelColor = SKColor.Parse("#FF0000"),
+            },
+            new Entry(1200)
+            {
+                Label = "Educação",
+                ValueLabel = "1200",
+                Color = SKColor.Parse("#008000"),
+                TextColor = SKColor.Parse("#008000"),
+                ValueLabelColor = SKColor.Parse("#008000"),
             },
             new Entry(100)
             {
-                Label = "Entretenimento",
-                ValueLabel = "100",
+                Label = "Salário",
+                ValueLabel = "-7000",
+                Color = SKColor.Parse("#808080"),
+                TextColor = SKColor.Parse("#808080"),
+                ValueLabelColor = SKColor.Parse("#808080"),
             }
         };
         public TelaLogada()

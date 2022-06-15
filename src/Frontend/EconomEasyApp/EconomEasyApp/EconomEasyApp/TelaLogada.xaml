@@ -10,6 +10,7 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
@@ -26,7 +27,11 @@
                         <Label Text="Saldo da Conta: R$ 1.500,00" TextColor="#245E8F" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <forms:ChartView x:Name="Chart1" HeightRequest="150"/>
+                <StackLayout Grid.Row="2" Padding="15">
+                    <StackLayout>
+                        <forms:ChartView x:Name="Chart1" HeightRequest="150"/>
+                    </StackLayout>
+                </StackLayout>
             </Grid>
         </ScrollView>
     </ContentPage.Content>
