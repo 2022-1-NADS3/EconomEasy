@@ -53,6 +53,12 @@
                         <forms:ChartView x:Name="Chart4" HeightRequest="150"/>
                     </StackLayout>
                 </StackLayout>
+                <StackLayout Grid.Row="6" Padding="15">
+                    <StackLayout>
+                        <Label Text="Despesas por conta" />
+                        <forms:ChartView x:Name="Chart5" HeightRequest="150"/>
+                    </StackLayout>
+                </StackLayout>
             </Grid>
         </ScrollView>
     </ContentPage.Content>

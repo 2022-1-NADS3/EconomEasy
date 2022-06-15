@@ -219,7 +219,7 @@ namespace EconomEasyApp
             Chart2.Chart = new BarChart {Entries = entries2 };
             Chart3.Chart = new LineChart { Entries = entries3 };
             Chart4.Chart = new PieChart { Entries = entries4 };
-            Chart4.Chart = new PointChart { Entries = entries5 };
+            Chart5.Chart = new PointChart { Entries = entries5 };
         }
 
         private void AddAddInfFin(object sender, EventArgs e)
