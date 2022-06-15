@@ -30,9 +30,9 @@ namespace EconomEasyApp
             }
         }
 
-        private static void Reconhecer_Tap(object sender, EventArgs e)
+        void Reconhecer_Tap(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Cadastro());
         }
     }
 }
